@@ -5,3 +5,4 @@ scikit-image>=0.21
 gudhi>=3.9
 gradio>=4.44
 Pillow>=10.0
+huggingface_hub<0.25
