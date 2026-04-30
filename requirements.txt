@@ -1,0 +1,7 @@
+manim>=0.18,<0.19
+numpy>=1.24
+scipy>=1.10
+scikit-image>=0.21
+gudhi>=3.9
+gradio>=4.31
+Pillow>=10.0
