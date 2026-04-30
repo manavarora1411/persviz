@@ -1,4 +1,4 @@
-manim>=0.18,<0.19
+manim>=0.18
 numpy>=1.24
 scipy>=1.10
 scikit-image>=0.21
