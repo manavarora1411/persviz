@@ -128,7 +128,7 @@ EXAMPLES_MD = """
 """
 
 
-with gr.Blocks(theme=THEME, title="persviz") as demo:
+with gr.Blocks(theme=THEME, title="persviz", analytics_enabled=False) as demo:
     gr.Markdown(INTRO_MD)
     with gr.Row():
         with gr.Column(scale=1):
@@ -165,4 +165,4 @@ with gr.Blocks(theme=THEME, title="persviz") as demo:
                      outputs=[video_out, status])
 
 if __name__ == "__main__":
-    demo.launch(server_name="0.0.0.0", server_port=7860)
+    demo.launch()
