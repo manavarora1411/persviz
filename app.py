@@ -165,4 +165,4 @@ with gr.Blocks(theme=THEME, title="persviz", analytics_enabled=False) as demo:
                      outputs=[video_out, status])
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(show_api=False)
