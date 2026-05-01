@@ -3,6 +3,7 @@ numpy>=1.24
 scipy>=1.10
 scikit-image>=0.21
 gudhi>=3.9
-gradio>=4.44
+gradio==4.44.1
 Pillow>=10.0
 huggingface_hub<0.25
+gradio_client==1.3.0
