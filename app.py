@@ -157,10 +157,10 @@ with gr.Blocks(theme=THEME, title="persviz", analytics_enabled=False) as demo:
             video_out = gr.Video(label="Filtration animation")
             status = gr.Textbox(label="status", interactive=False, lines=4)
 
-    preview_btn.click(make_preview,
+    preview_btn.click(make_preview, api_name=False,
                       inputs=[file_in, size, invert],
                       outputs=[preview_img, preview_caption])
-    render_btn.click(render,
+    render_btn.click(render, api_name=False,
                      inputs=[file_in, size, invert, quality, seed],
                      outputs=[video_out, status])
 
