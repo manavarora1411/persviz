@@ -6,4 +6,3 @@ gudhi>=3.9
 gradio==4.36.0
 Pillow>=10.0
 huggingface_hub<0.25
-gradio_client==1.0.5
