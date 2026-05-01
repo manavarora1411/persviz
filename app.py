@@ -78,7 +78,7 @@ def render(file_obj, target_size: int, invert: bool, quality: str, seed: int):
             str(scene_file),
             "FiltrationScene",
         ]
-        env = {**os.environ, "PERSVIZ_INPUT": str(input_npy.resolve())}
+        env = {**os.environ, "PERSVIZ_INPUT": str(input_npy.resolve()), "PYTHONPATH": str(REPO_ROOT / "src")}
 
         t0 = time.time()
         proc = subprocess.run(cmd, env=env, capture_output=True, text=True, timeout=900)
